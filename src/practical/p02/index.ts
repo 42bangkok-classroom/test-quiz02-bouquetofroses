@@ -20,4 +20,25 @@ type newUser = {
     bs: string;
   };
 };
+
+interface Geo {
+  lat: string;
+  lng: string;
+}
+interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: Geo;
+}
+interface ApiUser {
+  id: number;
+  name: string;
+  phone: string;
+  address?: Address;
+}
+interface 
+
+
 export function addUser(newUser: newUser | null) {}
